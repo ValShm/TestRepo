@@ -4,7 +4,7 @@
 name: MyGitHubActionTest
 env:
   APLICATION_NAME       : "Flask"
-  DEPLOY_PACKAGE_NAME   : "FlaskDeploy_var_${{ github.sha }}"
+  DEPLOY_PACKAGE_NAME   : "FlaskDeploy_var_${{github.sha}}"
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -44,7 +44,7 @@ jobs:
       run: echo "Hello, world! from deploy job"
       
     - name: Print Deploy package name
-      run : echo "Deploy package name is: ${{ env.DEPLOY_PACKAGE_NAME }}"
+      run : echo " Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }} "
 
     
     
