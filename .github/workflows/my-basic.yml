@@ -33,7 +33,7 @@ jobs:
       run: |
         echo "Print Message 1"
         echo "Print Massage 2"
-        echo "Aplication name : ${{ env.APLICATION_NAME }}
+        echo "Aplication name : ${{ env.APLICATION_NAME }}"
 
         
   my_deploy:
